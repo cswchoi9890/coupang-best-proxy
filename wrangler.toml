@@ -1,0 +1,12 @@
+name = "coupang-best-proxy"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+# wrangler kv namespace create CACHE 로 받은 id를 넣으세요
+[[kv_namespaces]]
+binding = "CACHE"
+id = "e1acf814c1244a59bbc24865723e479d"
+
+[vars]
+# 블로그 주소(쉼표로 여러 개 가능). 비워 두면 모든 곳에서 호출 가능
+ALLOWED_ORIGINS = "http://coupas.lsy38.com,https://coupas.lsy38.com"
